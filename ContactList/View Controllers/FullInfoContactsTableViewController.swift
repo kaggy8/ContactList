@@ -9,11 +9,9 @@ import UIKit
 
 class FullInfoContactsTableViewController: UITableViewController {
     
-    var person: [Person]!
+    // MARK: - Public properties
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
+    var person: [Person]!
 
     // MARK: - Table view data source
 
@@ -32,14 +30,12 @@ class FullInfoContactsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "contactFull", for: indexPath)
         var content = cell.defaultContentConfiguration()
-        var index = 0
         
         let email = person[indexPath.section].email
         let phone = person[indexPath.section].phoneNumber
         cell.tag = indexPath.row
         if cell.tag == 0 {
             content.text = phone
-            index += 1
         } else {
             content.text = email
         }
