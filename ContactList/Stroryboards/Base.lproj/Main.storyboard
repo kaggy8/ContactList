@@ -34,7 +34,7 @@
                             <outlet property="delegate" destination="KC4-kw-2tn" id="euo-RN-MGw"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Contacts" selectedImage="book" catalog="system" id="s38-Zr-fWr"/>
+                    <tabBarItem key="tabBarItem" title="Contacts" selectedImage="person.3" catalog="system" id="s38-Zr-fWr"/>
                     <navigationItem key="navigationItem" title="TEST@@@" largeTitleDisplayMode="always" id="ysJ-7x-ZWW"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f8v-Vi-0L0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -154,8 +154,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="book" catalog="system" width="128" height="99"/>
         <image name="person" catalog="system" width="128" height="117"/>
+        <image name="person.3" catalog="system" width="128" height="62"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

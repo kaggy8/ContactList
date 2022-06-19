@@ -35,8 +35,10 @@ class FullInfoContactsTableViewController: UITableViewController {
         let phone = person[indexPath.section].phoneNumber
         cell.tag = indexPath.row
         if cell.tag == 0 {
+            content.image = UIImage(systemName: "phone")
             content.text = phone
         } else {
+            content.image = UIImage(systemName: "envelope")
             content.text = email
         }
         
