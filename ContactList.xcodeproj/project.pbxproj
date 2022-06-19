@@ -13,9 +13,11 @@
 		548A761C285A5BBE00CB5E93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 548A761A285A5BBE00CB5E93 /* Main.storyboard */; };
 		548A761E285A5BBF00CB5E93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 548A761D285A5BBF00CB5E93 /* Assets.xcassets */; };
 		548A7621285A5BBF00CB5E93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 548A761F285A5BBF00CB5E93 /* LaunchScreen.storyboard */; };
-		548A762E285A5C6B00CB5E93 /* ContactListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548A762D285A5C6B00CB5E93 /* ContactListTableViewController.swift */; };
+		548A762E285A5C6B00CB5E93 /* ContactsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548A762D285A5C6B00CB5E93 /* ContactsListTableViewController.swift */; };
 		548A7631285A627200CB5E93 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548A7630285A627200CB5E93 /* Person.swift */; };
 		548A7633285A630400CB5E93 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548A7632285A630400CB5E93 /* DataManager.swift */; };
+		54CF18F9285F8A8A005D4516 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CF18F8285F8A8A005D4516 /* TabBarController.swift */; };
+		54FF6A0D285DFA090029622D /* FullInfoContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FF6A0C285DFA090029622D /* FullInfoContactsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,9 +29,11 @@
 		548A761D285A5BBF00CB5E93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		548A7620285A5BBF00CB5E93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		548A7622285A5BBF00CB5E93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		548A762D285A5C6B00CB5E93 /* ContactListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListTableViewController.swift; sourceTree = "<group>"; };
+		548A762D285A5C6B00CB5E93 /* ContactsListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsListTableViewController.swift; sourceTree = "<group>"; };
 		548A7630285A627200CB5E93 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		548A7632285A630400CB5E93 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		54CF18F8285F8A8A005D4516 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		54FF6A0C285DFA090029622D /* FullInfoContactsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullInfoContactsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,8 +96,10 @@
 		548A7629285A5C0B00CB5E93 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				548A762D285A5C6B00CB5E93 /* ContactListTableViewController.swift */,
+				548A762D285A5C6B00CB5E93 /* ContactsListTableViewController.swift */,
+				54FF6A0C285DFA090029622D /* FullInfoContactsTableViewController.swift */,
 				54701F1C285D2B3200E32B0C /* PersonViewController.swift */,
+				54CF18F8285F8A8A005D4516 /* TabBarController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -195,10 +201,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				548A762E285A5C6B00CB5E93 /* ContactListTableViewController.swift in Sources */,
+				548A762E285A5C6B00CB5E93 /* ContactsListTableViewController.swift in Sources */,
+				54CF18F9285F8A8A005D4516 /* TabBarController.swift in Sources */,
 				54701F1D285D2B3200E32B0C /* PersonViewController.swift in Sources */,
 				548A7615285A5BBE00CB5E93 /* AppDelegate.swift in Sources */,
 				548A7633285A630400CB5E93 /* DataManager.swift in Sources */,
+				54FF6A0D285DFA090029622D /* FullInfoContactsTableViewController.swift in Sources */,
 				548A7631285A627200CB5E93 /* Person.swift in Sources */,
 				548A7617285A5BBE00CB5E93 /* SceneDelegate.swift in Sources */,
 			);
