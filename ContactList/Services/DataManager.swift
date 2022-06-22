@@ -6,7 +6,10 @@
 //
 
 class DataManager {
-    var firstName = [
+    
+    static let shared = DataManager()
+    
+    let firstNames = [
         "Oliver",
         "Jack",
         "Harry",
@@ -29,7 +32,7 @@ class DataManager {
         "Harper"
     ]
     
-    var lastName = [
+    let lastNames = [
         "Aldridge",
         "Allford",
         "Alsopp",
@@ -52,7 +55,7 @@ class DataManager {
         "Walter"
     ]
     
-    var phoneNumber = [
+    let phoneNumbers = [
         "+1-313-305-1966",
         "+1-360-301-1141",
         "+1-201-761-0786",
@@ -75,7 +78,7 @@ class DataManager {
         "+1-208-680-1084"
     ]
     
-    var email = [
+    let emails = [
         "Amyous_kid_23@besthomework.com",
         "Isotherm@besthomework.com",
         "Technocracy@besthomework.com",
@@ -98,7 +101,5 @@ class DataManager {
         "Zonkedster1221@besthomework.com"
     ]
     
-    func getFirstName() -> String {
-        "Alexey"
-    }
+    private init() {}
 }

@@ -6,6 +6,8 @@
 //
 
 struct Person {
+    static let shared = Person.getUser()
+    
     let firstName: String
     let lastName: String
     let phoneNumber: String
@@ -16,33 +18,21 @@ struct Person {
     }
     
     static func getUser() -> [Person] {
-        let data = DataManager()
+        let data = DataManager.shared
 
-        var firstNameArray: [String] = []
-        var lastNameArray: [String] = []
-        var phoneNumberArray: [String] = []
-        var emailArray: [String] = []
+        let firstNameArray: [String] = data.firstNames.shuffled()
+        let lastNameArray: [String] = data.lastNames.shuffled()
+        let phoneNumberArray: [String] = data.phoneNumbers.shuffled()
+        let emailArray: [String] = data.emails.shuffled()
         var object: [Person] = []
         
-        for _ in data.firstName {
-            if firstNameArray.isEmpty {
-                firstNameArray = data.firstName
-                firstNameArray.shuffle()
-                
-                lastNameArray = data.lastName
-                lastNameArray.shuffle()
-                
-                phoneNumberArray = data.phoneNumber
-                phoneNumberArray.shuffle()
-                
-                emailArray = data.email
-                emailArray.shuffle()
-            }
+        for _ in firstNameArray {
+            let count = object.count
             
-            let firstName = firstNameArray.removeFirst()
-            let lastName = lastNameArray.removeFirst()
-            let phoneNumber = phoneNumberArray.removeFirst()
-            let email = emailArray.removeFirst()
+            let firstName = firstNameArray[0 + count]
+            let lastName = lastNameArray[0 + count]
+            let phoneNumber = phoneNumberArray[0 + count]
+            let email = emailArray[0 + count]
             
             object.append(Person(firstName: firstName,
                                  lastName: lastName,
@@ -52,4 +42,5 @@ struct Person {
         
         return object
     }
+
 }

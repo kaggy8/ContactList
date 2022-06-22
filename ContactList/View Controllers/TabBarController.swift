@@ -9,10 +9,19 @@ import UIKit
 
 class TabBarController: UITabBarController {
     
-    private let contactList = Person.getUser()
+    // MARK: - Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setTransition()
+    }
+    
+    // MARK: - Private methods
+    
+    private func setTransition() {
+        let contactList = Person.shared
+        
         let contactListVC = viewControllers?.first as! ContactsListTableViewController
         let fullInfoVC = viewControllers?.last as! FullInfoContactsTableViewController
         
