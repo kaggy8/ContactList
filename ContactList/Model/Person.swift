@@ -6,7 +6,6 @@
 //
 
 struct Person {
-    static let shared = Person.getUser()
     
     let firstName: String
     let lastName: String
